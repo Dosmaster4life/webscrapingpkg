@@ -29,7 +29,7 @@ async fn main()
     .expect("no response from site")// most likely due to site blocking get request or a timeout
     .text()
     .await// Wait for data
-    .expect("access denied"); // Most likly due to denied accesss
+    .expect("access denied"); // Most likly due to denied access
     
     let path_link = "AllData.txt".to_owned();
     filewriter(&response_information, &path_link);
